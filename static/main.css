@@ -1,0 +1,221 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+h1,
+h2,
+p,
+a {
+    color: white;
+}
+
+html {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    height: auto;
+    left: 0px;
+    top: 40px;
+    margin-top: 55px;
+}
+
+.photo {
+    float: left;
+    position: static;
+    width: 80px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: url(image.png);
+    border-radius: 1000px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: flex-start;
+    margin-left: 20;
+}
+
+.title {
+    position: static;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 6.76%;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 110%;
+    /* or 24px */
+    letter-spacing: -0.01em;
+    /* Text / Primary */
+    color: rgba(255, 255, 255, 0.8);
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 0px 0px;
+}
+
+.subtitle {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 17px;
+    line-height: 140%;
+    /* or 24px */
+    letter-spacing: -0.01em;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 0px 0px;
+}
+
+.header-text {
+    float: right;
+    width: 65%;
+}
+
+.entry {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    position: static;
+    width: 320px;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    /* Invert */
+    background: #171717;
+    border-radius: 12px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.entry-header {
+    margin: 0px 20px;
+    margin-bottom: 8px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 140%;
+}
+
+.entry-text {
+    margin: 0px 20px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 17px;
+    line-height: 140%;
+}
+
+.entry-button {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+    position: static;
+    width: 240px;
+    height: 25px;
+    /* Buttons / Secondary */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1000px;
+    /* Inside Auto Layout */
+    margin: 0px 3px;
+    text-align: center;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 160%;
+    /* identical to box height, or 24px */
+    /* Icons / Normal */
+    color: #CCCCCC;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: center;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.contacts {
+    /* Auto Layout */
+    padding: 20px 0px;
+    position: static;
+    width: 320px;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    /* Invert */
+    background: #171717;
+    border-radius: 12px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.contacts-header {
+    width: 280px;
+    margin: 0px 20px 8px 20px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 110%;
+}
+
+.contact-block {
+    height: 50px;
+    width: 280px;
+    margin: 0px 20px;
+}
+
+.contact {
+    float: left;
+    margin: 13px 0px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 17px;
+    line-height: 140%;
+}
+
+.arrow {
+    float: right;
+    margin: 14px 0px;
+}
+
+.footer {
+    padding: 20px;
+    width: 320px;
+}
+
+.footer-text {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 140%;
+    /* or 24px */
+    text-align: center;
+    /* Text / Secondary */
+    color: rgba(255, 255, 255, 0.5);
+}

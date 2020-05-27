@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Глеб Летушов</title>
+</head>
+
+<body>
+    <div class="screen">
+        <div class="page-header">
+            <img src="{{ url_for('static', filename='gleb.png') }}" alt="Gleb_sobstennoy_personoy" class="photo">
+            <div class="header-text">
+                <h1 class="title">Глеб Летушов</h1>
+                <h1 class="subtitle">Дизайнер <br>в DRIVE2.RU</h1>
+            </div>
+        </div>
+        <div class="entry-list">
+            {% for entry in entry_list %}
+            <div class="entry">
+                <h2 class="entry-header">{{entry.title}}</h2>
+                <p class="entry-text">{{entry.description}}</p>
+                <a class="entry-button" href="{{entry.link}}">{{entry.link_text}}</a>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="contacts">
+            <h2 class="contacts-header">Напишите мне</h2>
+            <a href="mailto:gl.letushov@yandex.ru">
+                <div class="contact-block">
+                    <p class="contact">На почту</p><img src="{{ url_for('static', filename='arrow.png') }}" class="arrow"></div>
+            </a>
+            <a href="https://teleg.one/gLetushov">
+                <div class="contact-block">
+                    <p class="contact">В телеграм</p><img src="{{ url_for('static', filename='arrow.png') }}" class="arrow"></div>
+            </a>
+        </div>
+        <div class="footer">
+            <p class="footer-text">letushv.ru</p>
+            <p class="footer-text">2020</p>
+        </div>
+    </div>
+
+</body>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+</html>
